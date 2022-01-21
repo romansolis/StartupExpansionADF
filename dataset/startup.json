@@ -1,0 +1,58 @@
+{
+	"name": "startup",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "StartUpMain",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "P1-StartupExpansion.xlsx",
+				"container": "startupexpansion"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "RowID",
+				"type": "String"
+			},
+			{
+				"name": "Store ID",
+				"type": "String"
+			},
+			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "State",
+				"type": "String"
+			},
+			{
+				"name": "Sales Region",
+				"type": "String"
+			},
+			{
+				"name": "New Expansion",
+				"type": "String"
+			},
+			{
+				"name": "Marketing Spend",
+				"type": "String"
+			},
+			{
+				"name": "Revenue",
+				"type": "String"
+			},
+			{
+				"name": "Unit Sold",
+				"type": "String"
+			}
+		]
+	}
+}
